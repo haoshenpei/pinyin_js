@@ -41,7 +41,6 @@ function pinyinWithOutYin(word,splitStr) {
             str += word.charAt(i);
         }
     }
-    console.log(str)
 
     return str;
 }
