@@ -9,14 +9,14 @@ npm install
 ##汉字转化成带音节的拼音
 ```javascript
 var pinyin=require("pinyin_js");
-console.log(pinyin.pinyin("你好"));
+console.log(pinyin.pinyin("你好"," "));
 //输出结果是nǐ hǎo 
 ```
 
 ##汉字转化成不带音节的拼音
 ```javascript
 var pinyin=require("pinyin_js");
-console.log(pinyin.pinyinWithOutYin("你好"));
+console.log(pinyin.pinyinWithOutYin("你好"," "));
 //输出结果是ni hao 
 ```
 

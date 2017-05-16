@@ -5,7 +5,7 @@ var hzpy = require("./hanziPinyin").hzpy;
 var hzpyWithOutYin = require("./hanziPinyinWithoutYin").hzpy;
 var _ = require("lodash");
 
-function pinyin(word) {
+function pinyin(word,splitStr) {
     var str = '';
     var s;
     for (var i = 0; i < word.length; i++) {
@@ -15,7 +15,7 @@ function pinyin(word) {
                 str += hzpy.charAt(hzpy.indexOf(word.charAt(i)) + s);
                 s++;
             }
-            str += " ";
+            str += splitStr;
         }
         else {
             str += word.charAt(i);
@@ -35,12 +35,14 @@ function pinyinWithOutYin(word,splitStr) {
                 str += hzpyWithOutYin.charAt(hzpyWithOutYin.indexOf(word.charAt(i)) + s);
                 s++;
             }
-            str += splitStr|" ";
+            str +=splitStr;
         }
         else {
             str += word.charAt(i);
         }
     }
+    console.log(str)
+
     return str;
 }
 
