@@ -1,6 +1,6 @@
 {
   "name": "pinyin_js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "you can get the chinese pinyin using this module.",
   "main": "index.js",
   "directories": {
