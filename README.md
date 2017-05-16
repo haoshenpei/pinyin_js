@@ -23,3 +23,23 @@ console.log(pinyin.isChineseWord("!你好",false));//true
 console.log(pinyin.isChineseWord("!你好",true));//第二个参数：true是严格模式，默认为严格模式
 //false
 ```
+
+##首字母排序
+
+```javascript
+var users = [
+    { 'user': '123',   'age': 48 },
+    { 'user': '张三',   'age': 48 },
+    { 'user': '李四', 'age': 36 },
+    { 'user': '张三丰',   'age': 40 },
+    { 'user': '张三炮', 'age': 34 }
+];
+var sortResult = pinyin.sort(users, "user");
+console.log(sortResult)
+/*[ { user: '123', age: 48 },
+    { user: '李四', age: 36 },
+    { user: '张三', age: 48 },
+    { user: '张三丰', age: 40 },
+    { user: '张三炮', age: 34 } ]*/
+    
+```
