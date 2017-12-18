@@ -6,6 +6,7 @@ var hzpyWithOutYin = require("./hanziPinyinWithoutYin").hzpy;
 var _ = require("lodash");
 
 function pinyin(word,splitStr) {
+    splitStr = splitStr === undefined ? ' ' : splitStr;
     var str = '';
     var s;
     for (var i = 0; i < word.length; i++) {
@@ -26,6 +27,7 @@ function pinyin(word,splitStr) {
 
 //无声调的拼音
 function pinyinWithOutYin(word,splitStr) {
+    splitStr = splitStr === undefined ? ' ' : splitStr;
     var str = '';
     var s;
     for (var i = 0; i < word.length; i++) {
